@@ -1,0 +1,355 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>PawPaw — Happy pets. Happy humans.</title>
+<meta name="description" content="PawPaw is a premium pet shop for dogs and cats — food, toys, beds and care essentials your pet will love.">
+<link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🐾</text></svg>">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400..700&family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+
+<!-- ============ HEADER ============ -->
+<header class="site-header" id="siteHeader">
+  <div class="container header-inner">
+    <a href="#top" class="logo" aria-label="PawPaw home">
+      <span class="logo-mark" aria-hidden="true">
+        <svg viewBox="0 0 48 48" fill="none"><path d="M24 27c-6.5 0-13 5.2-13 10.4 0 3 2.3 4.6 5.4 4.6 2.6 0 4.6-1.4 7.6-1.4s5 1.4 7.6 1.4c3.1 0 5.4-1.6 5.4-4.6C37 32.2 30.5 27 24 27Z" fill="currentColor"/><circle cx="10.5" cy="21" r="5" fill="currentColor"/><circle cx="37.5" cy="21" r="5" fill="currentColor"/><circle cx="17" cy="9.5" r="5" fill="currentColor"/><circle cx="31" cy="9.5" r="5" fill="currentColor"/></svg>
+      </span>
+      <span class="logo-word">PawPaw</span>
+    </a>
+
+    <nav class="main-nav" id="mainNav" aria-label="Primary">
+      <a href="#products" data-scroll>Shop</a>
+      <a href="#" data-filter-link="cats">Cats</a>
+      <a href="#" data-filter-link="dogs">Dogs</a>
+      <a href="#about" data-scroll>About</a>
+    </nav>
+
+    <div class="header-actions">
+      <div class="search-wrap" id="searchWrap">
+        <button class="icon-btn" id="searchToggle" aria-label="Search products" aria-expanded="false">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><circle cx="11" cy="11" r="7"/><path d="m21 21-4.3-4.3"/></svg>
+        </button>
+        <input type="text" id="searchInput" class="search-input" placeholder="Search treats, toys, beds…" autocomplete="off">
+      </div>
+
+      <button class="icon-btn" id="favToggle" aria-label="View favorites">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20.8 4.6a5.5 5.5 0 0 0-7.8 0L12 5.6l-1-1a5.5 5.5 0 0 0-7.8 7.8l1 1L12 21l7.8-7.6 1-1a5.5 5.5 0 0 0 0-7.8Z"/></svg>
+        <span class="count-badge" id="favCount" hidden>0</span>
+      </button>
+
+      <button class="icon-btn" id="cartToggle" aria-label="Open cart">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M6 6h15l-1.5 9h-12z"/><path d="M6 6 5 2H2"/><circle cx="9.5" cy="20" r="1.4" fill="currentColor" stroke="none"/><circle cx="17.5" cy="20" r="1.4" fill="currentColor" stroke="none"/></svg>
+        <span class="count-badge" id="cartCount" hidden>0</span>
+      </button>
+
+      <button class="icon-btn menu-toggle" id="menuToggle" aria-label="Open menu" aria-expanded="false">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M4 7h16M4 12h16M4 17h16"/></svg>
+      </button>
+    </div>
+  </div>
+
+  <nav class="mobile-nav" id="mobileNav" aria-label="Mobile">
+    <a href="#products" data-scroll data-close>Shop</a>
+    <a href="#" data-filter-link="cats" data-close>Cats</a>
+    <a href="#" data-filter-link="dogs" data-close>Dogs</a>
+    <a href="#about" data-scroll data-close>About</a>
+  </nav>
+</header>
+
+<main id="top">
+
+  <!-- ============ HERO ============ -->
+  <section class="hero" id="hero">
+    <div class="container hero-inner">
+      <div class="hero-copy reveal">
+        <span class="eyebrow">🐾 New arrivals for autumn</span>
+        <h1 class="hero-title">Happy pets.<br>Happy humans.</h1>
+        <p class="hero-subtitle">Everything they love. All in one place — thoughtfully made food, toys, beds and care for dogs and cats.</p>
+        <div class="hero-cta-row">
+          <a href="#products" class="btn btn-primary" data-scroll>
+            Shop now
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+          </a>
+          <a href="#categories" class="btn btn-ghost" data-scroll>Browse categories</a>
+        </div>
+        <div class="hero-trust">
+          <div class="avatar-stack" aria-hidden="true">
+            <span style="--c:#FF8A4C">JM</span>
+            <span style="--c:#6E4A8E">LR</span>
+            <span style="--c:#2B2420">AK</span>
+          </div>
+          <div class="hero-trust-text">
+            <strong>4.9/5</strong> from 12,000+ happy pet parents
+          </div>
+        </div>
+      </div>
+
+      <div class="hero-visual reveal">
+        <div class="hero-blob" aria-hidden="true"></div>
+        <img class="hero-photo" data-fallback="dog"
+             src="https://images.unsplash.com/photo-1601758228041-f3b2795255f1?auto=format&fit=crop&w=900&q=80"
+             alt="Happy golden retriever mid-play, tongue out, on a warm cream background">
+        <div class="floating-card floating-card--rating">
+          <span class="stars" data-rating="5"></span>
+          <p>“Best treats our beagle has ever had.”</p>
+        </div>
+        <div class="floating-card floating-card--stat">
+          <strong>15k+</strong>
+          <span>orders delivered</span>
+        </div>
+        <svg class="paw-deco paw-deco--1" viewBox="0 0 48 48" aria-hidden="true"><path d="M24 27c-6.5 0-13 5.2-13 10.4 0 3 2.3 4.6 5.4 4.6 2.6 0 4.6-1.4 7.6-1.4s5 1.4 7.6 1.4c3.1 0 5.4-1.6 5.4-4.6C37 32.2 30.5 27 24 27Z" fill="currentColor"/><circle cx="10.5" cy="21" r="5" fill="currentColor"/><circle cx="37.5" cy="21" r="5" fill="currentColor"/><circle cx="17" cy="9.5" r="5" fill="currentColor"/><circle cx="31" cy="9.5" r="5" fill="currentColor"/></svg>
+        <svg class="paw-deco paw-deco--2" viewBox="0 0 48 48" aria-hidden="true"><path d="M24 27c-6.5 0-13 5.2-13 10.4 0 3 2.3 4.6 5.4 4.6 2.6 0 4.6-1.4 7.6-1.4s5 1.4 7.6 1.4c3.1 0 5.4-1.6 5.4-4.6C37 32.2 30.5 27 24 27Z" fill="currentColor"/><circle cx="10.5" cy="21" r="5" fill="currentColor"/><circle cx="37.5" cy="21" r="5" fill="currentColor"/><circle cx="17" cy="9.5" r="5" fill="currentColor"/><circle cx="31" cy="9.5" r="5" fill="currentColor"/></svg>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ CATEGORIES ============ -->
+  <section class="categories" id="categories">
+    <div class="container">
+      <div class="section-head reveal">
+        <span class="kicker">Shop by category</span>
+        <h2>Find exactly what they're wagging for</h2>
+      </div>
+
+      <div class="category-grid reveal">
+        <button class="cat-card cat-card--photo" style="grid-area: dogs" data-filter="dogs">
+          <img data-fallback="dog" src="https://images.unsplash.com/photo-1517849845537-4d257902861a?auto=format&fit=crop&w=700&q=80" alt="">
+          <span class="cat-card-overlay"></span>
+          <span class="cat-card-label">
+            <span class="cat-card-title">Dogs</span>
+            <span class="cat-card-sub">Gear for good boys &amp; girls →</span>
+          </span>
+        </button>
+
+        <button class="cat-card cat-card--photo" style="grid-area: cats" data-filter="cats">
+          <img data-fallback="cat" src="https://images.unsplash.com/photo-1514888286974-6c03e2ca1dba?auto=format&fit=crop&w=700&q=80" alt="">
+          <span class="cat-card-overlay"></span>
+          <span class="cat-card-label">
+            <span class="cat-card-title">Cats</span>
+            <span class="cat-card-sub">Everything a curious cat needs →</span>
+          </span>
+        </button>
+
+        <button class="cat-card cat-card--icon" style="grid-area: food; --tint:#FFE7D2" data-filter="food">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7"><path d="M4 9a8 8 0 0 1 16 0v1H4Z"/><path d="M3 12h18l-1.5 7.5a2 2 0 0 1-2 1.5H6.5a2 2 0 0 1-2-1.5Z"/></svg>
+          <span class="cat-card-title">Food</span>
+        </button>
+
+        <button class="cat-card cat-card--icon" style="grid-area: toys; --tint:#F1E4FA" data-filter="toys">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7"><circle cx="7" cy="7" r="3.2"/><circle cx="17" cy="17" r="3.2"/><path d="M9.3 9.3 14.7 14.7"/></svg>
+          <span class="cat-card-title">Toys</span>
+        </button>
+
+        <button class="cat-card cat-card--icon cat-card--wide" style="grid-area: beds; --tint:#EDE3F7" data-filter="beds">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7"><path d="M3 18v-4a3 3 0 0 1 3-3h12a3 3 0 0 1 3 3v4"/><path d="M3 18h18M5 11V8a2 2 0 0 1 2-2h3v5M13 11V8a2 2 0 0 1 2-2h3a2 2 0 0 1 2 2v3"/></svg>
+          <span class="cat-card-title">Beds</span>
+        </button>
+
+        <button class="cat-card cat-card--icon cat-card--wide" style="grid-area: care; --tint:#FFEAD2" data-filter="care">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7"><path d="M12 21s-7-4.35-9.5-9C1 8 2.7 4.8 6 4.2c2-.36 3.7.6 4.8 2.2 1.1-1.6 2.8-2.56 4.8-2.2C18.9 4.8 20.6 8 19.5 12c-2.5 4.65-7.5 9-7.5 9Z"/></svg>
+          <span class="cat-card-title">Care</span>
+        </button>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ POPULAR PRODUCTS ============ -->
+  <section class="products" id="products">
+    <div class="container">
+      <div class="section-head section-head--row reveal">
+        <div>
+          <span class="kicker">Bestsellers</span>
+          <h2>Popular right now</h2>
+        </div>
+        <p class="section-lede">Hand-picked favorites our community keeps reordering.</p>
+      </div>
+
+      <div class="filter-row reveal" id="filterRow">
+        <button class="filter-pill is-active" data-filter="all">All</button>
+        <button class="filter-pill" data-filter="dogs">Dogs</button>
+        <button class="filter-pill" data-filter="cats">Cats</button>
+        <button class="filter-pill" data-filter="food">Food</button>
+        <button class="filter-pill" data-filter="toys">Toys</button>
+        <button class="filter-pill" data-filter="beds">Beds</button>
+        <button class="filter-pill" data-filter="care">Care</button>
+      </div>
+
+      <div class="product-grid reveal" id="productGrid"></div>
+      <p class="empty-state" id="emptyState" hidden>No products match your search — try a different keyword or category.</p>
+    </div>
+  </section>
+
+  <!-- ============ PROMO ============ -->
+  <section class="promo">
+    <div class="container promo-inner reveal">
+      <svg class="promo-paw promo-paw--1" viewBox="0 0 48 48" aria-hidden="true"><path d="M24 27c-6.5 0-13 5.2-13 10.4 0 3 2.3 4.6 5.4 4.6 2.6 0 4.6-1.4 7.6-1.4s5 1.4 7.6 1.4c3.1 0 5.4-1.6 5.4-4.6C37 32.2 30.5 27 24 27Z" fill="currentColor"/><circle cx="10.5" cy="21" r="5" fill="currentColor"/><circle cx="37.5" cy="21" r="5" fill="currentColor"/><circle cx="17" cy="9.5" r="5" fill="currentColor"/><circle cx="31" cy="9.5" r="5" fill="currentColor"/></svg>
+      <svg class="promo-paw promo-paw--2" viewBox="0 0 48 48" aria-hidden="true"><path d="M24 27c-6.5 0-13 5.2-13 10.4 0 3 2.3 4.6 5.4 4.6 2.6 0 4.6-1.4 7.6-1.4s5 1.4 7.6 1.4c3.1 0 5.4-1.6 5.4-4.6C37 32.2 30.5 27 24 27Z" fill="currentColor"/><circle cx="10.5" cy="21" r="5" fill="currentColor"/><circle cx="37.5" cy="21" r="5" fill="currentColor"/><circle cx="17" cy="9.5" r="5" fill="currentColor"/><circle cx="31" cy="9.5" r="5" fill="currentColor"/></svg>
+      <span class="kicker kicker--light">Limited time</span>
+      <h2 class="promo-title">20% off your first order</h2>
+      <p class="promo-sub">Use code at checkout — new PawPaw families only.</p>
+      <button class="btn btn-primary" id="promoBtn">
+        Get discount
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+      </button>
+    </div>
+  </section>
+
+  <!-- ============ WHY PAWPAW ============ -->
+  <section class="why" id="about">
+    <div class="container">
+      <div class="section-head reveal">
+        <span class="kicker">Why PawPaw</span>
+        <h2>A little extra love, built in</h2>
+      </div>
+      <div class="why-grid reveal">
+        <div class="why-card">
+          <span class="why-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7"><path d="M3 16V7a1 1 0 0 1 1-1h9v10"/><path d="M13 10h4l4 4v2h-8"/><circle cx="7.5" cy="18.5" r="1.8"/><circle cx="17.5" cy="18.5" r="1.8"/></svg></span>
+          <h3>Fast Delivery</h3>
+          <p>Most orders arrive within 2–3 days, straight to your door.</p>
+        </div>
+        <div class="why-card">
+          <span class="why-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7"><path d="M11 20A9 9 0 0 1 3 11c4-1 9 1 9 9Z"/><path d="M20 4c1 5-2 9-7 9 0-5 2-9 7-9Z"/></svg></span>
+          <h3>Eco Friendly</h3>
+          <p>Recyclable packaging and responsibly sourced ingredients.</p>
+        </div>
+        <div class="why-card">
+          <span class="why-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7"><path d="M12 21s-7-4.35-9.5-9C1 8 2.7 4.8 6 4.2c2-.36 3.7.6 4.8 2.2 1.1-1.6 2.8-2.56 4.8-2.2C18.9 4.8 20.6 8 19.5 12c-2.5 4.65-7.5 9-7.5 9Z"/></svg></span>
+          <h3>Pet Approved</h3>
+          <p>Every product tested and loved by real dogs and cats.</p>
+        </div>
+        <div class="why-card">
+          <span class="why-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7"><path d="M3 12a9 9 0 1 0 3-6.7"/><path d="M3 4v5h5"/></svg></span>
+          <h3>Easy Returns</h3>
+          <p>Not a match? Free returns within 30 days, no questions asked.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ REVIEWS ============ -->
+  <section class="reviews">
+    <div class="container">
+      <div class="section-head reveal">
+        <span class="kicker">Reviews</span>
+        <h2>Loved by pet parents everywhere</h2>
+      </div>
+      <div class="review-grid reveal">
+        <article class="review-card">
+          <span class="stars" data-rating="5"></span>
+          <p>“My golden retriever Max destroys every toy in a day — the PawPaw rope toy has survived three weeks and counting.”</p>
+          <div class="review-author"><span class="review-avatar" style="--c:#FF8A4C">SM</span><div><strong>Sarah M.</strong><span>Owner of Max, Golden Retriever</span></div></div>
+        </article>
+        <article class="review-card">
+          <span class="stars" data-rating="5"></span>
+          <p>“The self-cleaning litter box changed our lives. Our cat Luna actually seems to enjoy using it, if that's possible.”</p>
+          <div class="review-author"><span class="review-avatar" style="--c:#6E4A8E">DK</span><div><strong>David K.</strong><span>Owner of Luna, Tabby Cat</span></div></div>
+        </article>
+        <article class="review-card">
+          <span class="stars" data-rating="4.5"></span>
+          <p>“Delivery was quicker than any other pet store I've used, and the orthopedic bed has helped our senior pup sleep so much better.”</p>
+          <div class="review-author"><span class="review-avatar" style="--c:#2B2420">RT</span><div><strong>Rachel T.</strong><span>Owner of Biscuit, Senior Labrador</span></div></div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ NEWSLETTER ============ -->
+  <section class="newsletter">
+    <div class="container newsletter-inner reveal">
+      <div class="newsletter-copy">
+        <h2>Join the PawPaw family</h2>
+        <p>Get 10% off your next order, early access to drops, and the occasional pet photo dump.</p>
+      </div>
+      <form class="newsletter-form" id="newsletterForm" novalidate>
+        <input type="email" id="newsletterEmail" placeholder="you@example.com" required aria-label="Email address">
+        <button type="submit" class="btn btn-primary">Subscribe</button>
+      </form>
+    </div>
+  </section>
+
+</main>
+
+<!-- ============ FOOTER ============ -->
+<footer class="site-footer">
+  <div class="container footer-inner">
+    <div class="footer-brand">
+      <a href="#top" class="logo logo--footer" data-scroll>
+        <span class="logo-mark" aria-hidden="true">
+          <svg viewBox="0 0 48 48" fill="none"><path d="M24 27c-6.5 0-13 5.2-13 10.4 0 3 2.3 4.6 5.4 4.6 2.6 0 4.6-1.4 7.6-1.4s5 1.4 7.6 1.4c3.1 0 5.4-1.6 5.4-4.6C37 32.2 30.5 27 24 27Z" fill="currentColor"/><circle cx="10.5" cy="21" r="5" fill="currentColor"/><circle cx="37.5" cy="21" r="5" fill="currentColor"/><circle cx="17" cy="9.5" r="5" fill="currentColor"/><circle cx="31" cy="9.5" r="5" fill="currentColor"/></svg>
+        </span>
+        <span class="logo-word">PawPaw</span>
+      </a>
+      <p>Thoughtfully made essentials for happy dogs, happy cats, and the humans who love them.</p>
+      <div class="social-row">
+        <a href="#" aria-label="PawPaw on Instagram"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="1"/></svg></a>
+        <a href="#" aria-label="PawPaw on Facebook"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7"><path d="M14 9h3V6h-3a3 3 0 0 0-3 3v2H8v3h3v6h3v-6h3l1-3h-4V9a1 1 0 0 1 1-1Z"/></svg></a>
+        <a href="#" aria-label="PawPaw on TikTok"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7"><path d="M14 4v9.5a3.5 3.5 0 1 1-3-3.47M14 4a5 5 0 0 0 5 5"/></svg></a>
+      </div>
+    </div>
+
+    <div class="footer-col">
+      <h4>Shop</h4>
+      <a href="#" data-filter-link="dogs">Dogs</a>
+      <a href="#" data-filter-link="cats">Cats</a>
+      <a href="#" data-filter-link="food">Food</a>
+      <a href="#" data-filter-link="toys">Toys</a>
+      <a href="#" data-filter-link="beds">Beds</a>
+    </div>
+    <div class="footer-col">
+      <h4>Company</h4>
+      <a href="#about" data-scroll>About us</a>
+      <a href="#">Careers</a>
+      <a href="#">Sustainability</a>
+      <a href="#">Press</a>
+    </div>
+    <div class="footer-col">
+      <h4>Help</h4>
+      <a href="#">Shipping</a>
+      <a href="#">Returns</a>
+      <a href="#">FAQ</a>
+      <a href="#">Contact</a>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <div class="container footer-bottom-inner">
+      <span>© <span id="year"></span> PawPaw. All rights reserved.</span>
+      <span>Made with 🐾 for pets everywhere.</span>
+    </div>
+  </div>
+</footer>
+
+<!-- ============ CART DRAWER ============ -->
+<div class="drawer-overlay" id="drawerOverlay"></div>
+<aside class="cart-drawer" id="cartDrawer" aria-label="Shopping cart" aria-hidden="true">
+  <div class="cart-drawer-head">
+    <h3>Your cart</h3>
+    <button class="icon-btn" id="cartClose" aria-label="Close cart">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M6 6l12 12M18 6 6 18"/></svg>
+    </button>
+  </div>
+  <div class="cart-items" id="cartItems"></div>
+  <div class="cart-empty" id="cartEmpty" hidden>
+    <span>🐾</span>
+    <p>Your cart is empty.</p>
+    <button class="btn btn-outline" data-close-drawer data-scroll data-scroll-target="#products">Browse products</button>
+  </div>
+  <div class="cart-footer" id="cartFooter">
+    <div class="cart-row"><span>Subtotal</span><strong id="cartSubtotal">$0.00</strong></div>
+    <div class="cart-row cart-row--muted"><span>Shipping</span><span>Calculated at checkout</span></div>
+    <div class="cart-row cart-row--total"><span>Total</span><strong id="cartTotal">$0.00</strong></div>
+    <button class="btn btn-primary btn-block" id="checkoutBtn">Checkout</button>
+  </div>
+</aside>
+
+<!-- ============ TOASTS ============ -->
+<div class="toast-stack" id="toastStack" aria-live="polite"></div>
+
+<script src="js/script.js"></script>
+</body>
+</html>
